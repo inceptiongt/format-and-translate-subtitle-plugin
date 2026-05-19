@@ -191,10 +191,7 @@ ${BUN_X} {baseDir}/scripts/step4.ts <output_dir>/3.en.formatted.json "" <output_
 **工具**：`baoyu-skills:baoyu-translate` skill
 
 **执行方式**：
-调用 `baoyu-translate` skill，参数：
-- 源文件：`<output_dir>/4.en.formatted.indexed.md`
-- 目标语言：`zh-CN`
-- --mode 等其他参数，严格参照 EXTEND.md 文件。
+调用 `baoyu-translate` skill，处理 `<output_dir>/4.en.formatted.indexed.md`
 
 **额外要求（必须在调用时明确指定）**：
 1. 保持序号一一对应：`[N]` 英文 ↔ `[N]` 中文，不合并不拆分行；使用 `grep -c '^\[\d\+\.\?\d\?\]' file.md` **验证 行数 是否一致**。
